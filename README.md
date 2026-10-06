@@ -2,7 +2,7 @@
 
 Solución a la competencia ENIGMA de Kaggle, donde se predicen las horas de interrupción del servicio eléctrico por usuario para cada zona durante los 12 meses siguientes al historial. La métrica es RMSLE.
 
-**Resultado:** 1.er puesto, RMSLE 0.82468 sobre el 100 % del test.
+**Resultado:** 1.er puesto (elegible), RMSLE 0.82468 sobre el 100 % del test.
 
 **Kaggle:** https://www.kaggle.com/competitions/enigma-ml-competition/
 
