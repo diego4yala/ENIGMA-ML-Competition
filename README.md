@@ -27,35 +27,6 @@ La validación imita el test: se entrena solo con lo que ya habría terminado en
 
 En el notebook, la última sección resume qué se probó y no funcionó.
 
-## Estructura
-
-```
-.
-├── enigma_solucion.ipynb   notebook con todo el flujo y sus resultados
-├── requirements.txt
-├── data/                   aquí van los CSV de la competencia (no se versionan)
-└── outputs/                se crea al ejecutar; contiene submission.csv
-```
-
-## Cómo ejecutarlo
-
-1. Descargar los CSV de la competencia y copiarlos en `data/` (ver `data/README.md`).
-2. Crear un entorno e instalar dependencias:
-
-```bash
-python -m venv .venv
-source .venv/bin/activate        # en Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-3. Abrir y ejecutar el notebook:
-
-```bash
-jupyter notebook enigma_solucion.ipynb
-```
-
-El notebook completo tarda un par de minutos en una CPU normal y deja el archivo en `outputs/submission.csv`. Las semillas están fijas, así que los resultados deberían repetirse salvo diferencias menores entre versiones de las librerías.
-
 ## Nota sobre la submission original
 
 La entrega que obtuvo el primer puesto mezclaba además un 27 % de un ensamble anterior para las zonas con historia. Ese ensamble salía de una cadena larga de experimentos que no se puede reproducir de forma limpia, así que este repositorio contiene solo el modelo final. Según la validación, esa mezcla aportaba menos de 0.001.
